@@ -1,0 +1,18 @@
+.testimonial {
+  display: flex;
+
+  &__content {
+    margin: auto;
+    padding: 8rem;
+  }
+
+  &__img {
+    flex: 1 1 0;
+    min-width: 50%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

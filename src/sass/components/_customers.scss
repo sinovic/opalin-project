@@ -2,4 +2,10 @@
   margin-top: -16rem;
   padding: 8rem;
   background: linear-gradient($color-text 0%, darken($color-text, 7%) 100%);
+
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: .8rem;
+  }
 }
