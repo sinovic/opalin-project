@@ -1,35 +1,36 @@
 @charset 'UTF-8';
 
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
-  'abstracts/functions',
   'abstracts/mixins';
 
-// 2. Vendors
-@import
-  'vendor/normalize';
-
+//// 2. Vendors
+//@import
+//  'vendor/normalize';
+//
 // 3. Base stuff
 @import
   'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+  'base/typography';
 
 // 4. Layout-related sections
 @import
-  'layout/header',
-  'layout/footer';
+  'layout/header';
 
 // 5. Components
 @import
-  'components/button';
+  'components/buttons';
 
-// 6. Page-specific styles
-@import
-  'pages/home';
 
-// 7. Themes
-@import
-  'themes/default';
+//// 6. Page-specific styles
+//@import
+//  'pages/home';
+//
+//// 7. Themes
+//@import
+//  'themes/default';
