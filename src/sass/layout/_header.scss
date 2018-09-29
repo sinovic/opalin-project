@@ -3,9 +3,15 @@
 // -----------------------------------------------------------------------------
 .header {
   display: flex;
+  width: 100%;
   align-items: center;
-  background-color: $color-primary;
+  background-color: transparent;
   padding: 3.2rem;
+  min-height: 4rem;
+
+  position: absolute;
+  top: 0;
+  z-index : 20;
 
   &__logo {
     margin-right: 4rem;
@@ -33,14 +39,11 @@
   flex-grow: 2;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   &__list {
     list-style: none;
     display: flex;
-
-    &--right {
-      margin-left: auto;
-    }
   }
 
   &__item {
