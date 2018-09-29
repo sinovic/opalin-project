@@ -3,6 +3,11 @@
   padding: 8rem;
   background: linear-gradient($color-text 0%, darken($color-text, 7%) 100%);
 
+  &_companies {
+    display: flex;
+    justify-content: space-around;
+  }
+
   &__img {
     width: 100%;
     height: auto;
