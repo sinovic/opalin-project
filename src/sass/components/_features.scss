@@ -1,23 +1,8 @@
 .features {
   position: relative;
   width: 100%;
-  background-image: linear-gradient(140deg, #00d7af 25%, #575bde 100%);
   color: $color-white;
-  padding-bottom: 8rem;
-
-  &::before {
-    background-image: url(../media/bg/shape-dark-03.svg);
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    bottom: -1px;
-    content: "";
-    height: 101%;
-    left: -1%;
-    position: absolute;
-    top: -1px;
-    width: 101%;
-  }
+  padding: 8rem;
 
   &__box {
     display: flex;
@@ -30,7 +15,7 @@
     }
 
     &--hero {
-      height: 100vh;
+      min-height: 100vh;
     }
 
     &--reverse {

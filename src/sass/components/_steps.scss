@@ -1,0 +1,28 @@
+.steps {
+  padding: 8rem;
+  background: linear-gradient($color-white 0%, $color-gray-light 100%);
+
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 23%;
+    background-color: white;
+    border-radius: .8rem;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .1);
+    padding: 3.2rem;
+
+    &--dark {
+      background: lighten($color-text, 7%);
+
+      p {
+        opacity: .4;
+      }
+    }
+  }
+
+  &__link{}
+}

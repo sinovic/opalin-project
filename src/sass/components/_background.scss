@@ -1,0 +1,39 @@
+[class*="bg-image-"] {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  &:before,
+  &:after {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    bottom: -1px;
+    content: "";
+    height: 101%;
+    left: -1%;
+    position: absolute;
+    top: -1px;
+    width: 102%;
+  }
+
+  &:before {
+    z-index: -1;
+  }
+
+  &:after {
+    z-index: -2;
+  }
+}
+
+.bg-image-hero:after {
+  background: linear-gradient(140deg, $color-secondary 25%, $color-primary 100%);
+}
+
+.overlay-shape-03:before {
+  background-image: url(../media/bg/shape-dark-03.svg);
+}
+
+.overlay-shape-06:before {
+  background-image: url(../media/bg/shape-06.svg);
+}

@@ -1,3 +1,80 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+
+  &__features {
+    display: flex;
+    justify-content : space-around;
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 9.6rem;
+    width: 9.6rem;
+    line-height: 9.6rem;
+    text-align: center;
+    font-size: 4.8rem;
+    border-radius: 100%;
+    background-color: rgba($color-white, .1);
+    margin-bottom: 1.6rem;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__oplain {
+    width: 40%;
+    margin-right: 8rem;
+  }
+
+  // Footer List
+  &__nav {
+    width: 20%;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin-top: .8rem;
+  }
+
+  &__item {
+    line-height: 2rem;
+  }
+
+  &__link {
+    @include link {
+      color: rgba($color-white, .9);
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-white;
+    }
+  }
+
+  // Footer Copyright
+  &__copyright {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    opacity: 0.4;
+    padding-bottom: 3rem;
+  }
+
+}
