@@ -3,7 +3,7 @@
     'use strict';
 
     /**************** Gulp.js configuration ****************/
-    process.env.NODE_ENV = 'development';
+    process.env.NODE_ENV = 'production';
     const
 
         // development or production
@@ -27,8 +27,7 @@
         // sourcemaps and browsersync are only enabled for development builds.
         sourcemaps    = devBuild ? require('gulp-sourcemaps') : null,
         browsersync   = devBuild ? require('browser-sync').create() : null,
-        reload        = browsersync.reload;
-
+        reload        = require('browser-sync').reload;
 
     console.log('Gulp', devBuild ? 'development' : 'production', 'build');
 

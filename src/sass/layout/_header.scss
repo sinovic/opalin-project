@@ -13,6 +13,10 @@
   top: 0;
   z-index : 20;
 
+  @media only screen and (max-width: $small-screen) {
+    justify-content : space-between;
+  }
+
   &__logo {
     margin-right: 4rem;
     &,
@@ -33,6 +37,31 @@
       vertical-align: bottom;
     }
   }
+
+  &__hamburger,
+  &__hamburger:before,
+  &__hamburger:after {
+    display: none;
+    position: relative;
+    width: 3rem;
+    height: 3px;
+    background-color: white;
+
+    @media only screen and (max-width: $small-screen) {
+      display: inline-block;
+    }
+  }
+
+  &__hamburger:before,
+  &__hamburger:after {
+    position: absolute;
+    content: "";
+    left: 0;
+  }
+
+  &__hamburger:before {top: -.8rem}
+  &__hamburger:after {top: .8rem}
+
 }
 
 .main-nav {
@@ -40,6 +69,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: $small-screen) {
+    display: none;
+  }
 
   &__list {
     list-style: none;

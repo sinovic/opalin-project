@@ -1,5 +1,6 @@
 .mt-sm {
   margin-top: 1.6rem !important;
+
 }
 
 .mb-sm {
@@ -8,6 +9,10 @@
 
 .mt-lg {
   margin-top: 8rem !important;
+
+  @media only screen and (max-width: $xsmall-screen) {
+    margin-top: 6rem !important;
+  }
 }
 
 .max-width-m {
@@ -15,8 +20,8 @@
 }
 
 .center {
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center-text {
